@@ -34,9 +34,7 @@ function Todoitem(props) {
               <button
                 style={{ fontSize: "10px" }}
                 onClick={function () {
-                  setisdone(function (prevValue) {
-                    return !prevValue;
-                  });
+                  setisdone(false);
                   return props.onClick(props.id);
                 }}
               >
